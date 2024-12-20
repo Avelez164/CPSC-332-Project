@@ -79,7 +79,7 @@ CREATE TABLE Enrollments (
     stu_id CHAR(9),
     c_num INT,
     sec_num INT,
-    grade CHAR(2),
+    grade VARCHAR(2),
     PRIMARY KEY (stu_id, c_num, sec_num),
     FOREIGN KEY (stu_id) REFERENCES Students(stu_id),
     FOREIGN KEY (c_num) REFERENCES Enrollments(c_num),
