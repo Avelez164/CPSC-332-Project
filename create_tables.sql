@@ -36,7 +36,7 @@ CREATE TABLE Courses (
 
 CREATE TABLE CoursePrereq (
     c_num INT,
-    prereq_num INT
+    prereq_num INT,
     PRIMARY KEY (c_num, prereq_num),
     FOREIGN KEY (c_num) REFERENCES Courses(c_num),
     FOREIGN KEY (prereq_num) REFERENCES Courses(c_num)
@@ -79,7 +79,7 @@ CREATE TABLE Enrollments (
     stu_id CHAR(9),
     c_num INT,
     sec_num INT,
-    grade CHAR(2)
+    grade CHAR(2),
     PRIMARY KEY (stu_id, c_num, sec_num),
     FOREIGN KEY (stu_id) REFERENCES Students(stu_id),
     FOREIGN KEY (c_num) REFERENCES Enrollments(c_num),
