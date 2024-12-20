@@ -1,5 +1,5 @@
 <?php
-$hostName = 'mariadb';
+$hostName = 'localhost'; //adjust 
 $userName = 'username';
 $password = 'password';
 $dbName = 'dbname';
