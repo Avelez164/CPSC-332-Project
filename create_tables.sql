@@ -3,7 +3,7 @@ CREATE TABLE Professors (
     p_name VARCHAR(40),
     st_address VARCHAR(20),
     city VARCHAR(20),
-    state CHAR(2),
+    us_state CHAR(2),
     zip_code CHAR(5),
     p_area_code CHAR(3),
     p_phone CHAR(7),
@@ -18,7 +18,7 @@ CREATE TABLE Departments (
     dept_num INT,
     d_name VARCHAR(50),
     d_phone CHAR(10),
-    location VARCHAR(50),
+    office_location VARCHAR(50),
     chair_ssn CHAR(9),
     PRIMARY KEY (dept_num),
     FOREIGN KEY (chair_ssn) REFERENCES Professors(prof_ssn)
