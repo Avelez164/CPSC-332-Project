@@ -9,21 +9,47 @@
 
 <body>
   <h1>University Database</h1>
-  <form>
-    <fieldset>
-      <legend>Are you a professor or a student?</legend>
-      <div>
-        <input type="radio" id="professorChoice" name="role" value="professor" required/>
-        <label for="professorChoice">Professor</label>
 
-        <input type="radio" id="studentChoice" name="role" value="student" required/>
-        <label for="studentChoice">Student</label>
-      </div>
-      <div>
-        <button type="submit">Submit</button>
-      </div>
-    </fieldset>
-  </form>
+  <div>
+    <details>
+      <summary>Professor Interface</summary>
+
+      <form action="" method="post">
+        <h3>Professor Lookup</h3>
+        <p>Enter professor social security number (SSN):</p>
+        <input type="text" name="prof_ssn" placeholder="SSN">
+        <input type="submit">
+      </form>
+      <form action="" method="post">
+        <h3>Section Grades</h3>
+        <p>Enter course number and section number:</p>
+        <input type="text" name="c_num" placeholder="Course Number">
+        <input type="text" name="sec_num" placeholder="Section Number">
+        <input type="submit">
+      </form>
+    </details>
+  </div>
+
+  <br>
+
+  <div>
+    <details>
+      <summary>Student Interface</summary>
+
+      <form action="" method="post">
+        <h3>List Course Sections</h3>
+        <p>Enter course number:</p>
+        <input type="text" name="c_num" placeholder="Section Number">
+        <input type="submit">
+      </form>
+      <form action="" method="post">
+        <h3>Student Course History</h3>
+        <p>Enter student campus-wide ID (CWID):</p>
+        <input type="text" name="stu_id" placeholder="CWID">
+        <input type="submit">
+      </form>
+    </details>
+  </div>
 
 </body>
 
