@@ -9,7 +9,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         FROM Sections s
         LEFT JOIN Enrollments e ON s.c_num = e.c_num AND s.sec_num = e.sec_num
         WHERE s.c_num = ?
-        GROUP BY s.sec_num";
+        GROUP BY s.sec_num, s.room, s.meet_days, s.meet_begin, s.meet_end;";
 
     $stmt = $link->prepare($query);
     $stmt->bind_param("i", $c_num);
