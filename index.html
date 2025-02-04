@@ -17,17 +17,17 @@
       <summary>Professor Interface</summary>
       <fieldset>
 
-        <form action="" method="post">
+        <form action="professor_classes.php" method="post">
           <h3>List Professor's Classes</h3>
           <p>Enter professor social security number (SSN):</p>
-          <input type="text" name="prof_ssn" placeholder="SSN">
+          <input type="text" name="prof_ssn" placeholder="SSN" required>
           <input type="submit">
         </form>
-        <form action="" method="post">
+        <form action="section_grades.php" method="post">
           <h3>Count Section Grades</h3>
           <p>Enter course number and section number:</p>
-          <input type="text" name="c_num" placeholder="Course Number">
-          <input type="text" name="sec_num" placeholder="Section Number">
+          <input type="text" name="c_num" placeholder="Course Number" required>
+          <input type="text" name="sec_num" placeholder="Section Number" required>
           <input type="submit">
         </form>
       </fieldset>
@@ -41,16 +41,16 @@
       <summary>Student Interface</summary>
       <fieldset>
 
-        <form action="" method="post">
+        <form action="course_sections.php" method="post">
           <h3>List Course Sections</h3>
           <p>Enter course number:</p>
-          <input type="text" name="c_num" placeholder="Section Number">
+          <input type="text" name="c_num" placeholder="Section Number" required>
           <input type="submit">
         </form>
-        <form action="" method="post">
+        <form action="student_chist.php" method="post">
           <h3>Student Course History</h3>
           <p>Enter student campus-wide ID (CWID):</p>
-          <input type="text" name="stu_id" placeholder="CWID">
+          <input type="text" name="stu_id" placeholder="CWID" required>
           <input type="submit">
         </form>
       </fieldset>
